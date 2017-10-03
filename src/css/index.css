@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'ubuntu';
+	src: url('../font/ubuntu.ttf');
+}
+* {
+	font-family:ubuntu;
+}
+body {
+	text-align:center;
+}
+#body {
+	width:100%;
+	height:calc(100% - 50px);
+	position:fixed;
+	top:0px;
+	left:0px;
+	overflow:auto;
+	background-image:url('../img/bg.jpg');
+	background-size:100% 100%;
+}
+#valign {
+	width:400px;
+	height:400px;
+	position:absolute;
+	top:calc(50% - 200px);
+	left:calc(50% - 200px);
+}
+#logo {
+	width:200px;
+	height:200px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:30px;
+	margin-top:-35px;
+}
+#box {
+	display:inline-block;
+	padding:30px;
+	border:1px solid lightgray;
+	background-color:whitesmoke;
+	box-shadow:inset 1px 1px 0px white, inset -1px -1px 0px white;
+}
+#box input {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:25px;
+	width:280px;
+	height:20px;
+	border:1px solid lightgray;
+	padding:5px;
+	font-size:14px;
+	background-image:url('../img/user.png');
+	background-size:18px 18px;
+	background-position:right 5px center;
+	background-repeat:no-repeat;
+	box-shadow:1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, inset 0px 0px 3px whitesmoke;
+}
+#box button {
+	display:inline-block;
+	width:141px;
+	height:30px;
+	line-height:28px;
+	margin-left:5px;
+	margin-right:5px;
+	border:none;
+	background-color:#fbfbfb;
+	border:1px solid lightgray;
+	font-size:14px;
+	cursor:pointer;
+	box-shadow:1px 1px 0px white, -1px -1px 0px white, 1px -1px 0px white, -1px 1px 0px white, inset 1px 1px 0px white, inset -1px -1px 0px white;
+}
+#box button:hover {
+	background-color:white;
+}
+#box button:active {
+	background-color:whitesmoke;
+}
+#footer {
+	height:50px;
+	border-top:1px solid lightgray;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	background-color:whitesmoke;
+	color:rgba(0,0,0,.8);
+	font-size:14px;
+	line-height:49px;
+	box-shadow:inset 0px 1px 0px white;
+}
+#box input[name=password] {
+	background-image:url('../img/pass.png');
+}
