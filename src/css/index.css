@@ -17,6 +17,21 @@ body {
 	overflow:auto;
 	background-image:url('../img/bg.jpg');
 	background-size:100% 100%;
+	transition:.3s;
+	animation:fadein .5s;
+	background-color:white;
+}
+@keyframes fadein {
+	0% {
+		opacity:0;
+	} 55% {
+		opacity:0;
+	} 100% {
+		opacity:1;
+	}
+}
+#body.fade {
+	opacity:0;
 }
 #valign {
 	width:400px;
@@ -39,7 +54,7 @@ body {
 	padding:30px;
 	border:1px solid lightgray;
 	background-color:whitesmoke;
-	box-shadow:inset 1px 1px 0px white, inset -1px -1px 0px white;
+	box-shadow:inset 1px 1px 0px white, inset -1px -1px 0px white, 0px 10px 20px rgba(0,0,0,.05);
 }
 #box input {
 	display:block;
@@ -88,8 +103,52 @@ body {
 	color:rgba(0,0,0,.8);
 	font-size:14px;
 	line-height:49px;
-	box-shadow:inset 0px 1px 0px white;
+	box-shadow:inset 0px 1px 0px white, 0px 0px 20px rgba(0,0,0,.05);
 }
 #box input[name=password] {
 	background-image:url('../img/pass.png');
+}
+#loader {
+	position:fixed;
+	top:calc(50% - 150px);
+	left:calc(50% - 55px);
+	width:80px;
+	height:80px;
+	transition:.3;
+}
+#loader.fade {
+	opacity:1;
+}
+.loader, .loader:after {
+	border-radius: 50%;
+	width: 10em;
+	height: 10em;
+}
+.loader {
+	margin: 60px auto;
+	font-size: 10px;
+	position: relative;
+	text-indent: -9999em;
+	border-top: 1.1em solid rgba(0, 0, 0, 0.05);
+	border-right: 1.1em solid rgba(0, 0, 0, 0.05);
+	border-bottom: 1.1em solid rgba(0, 0, 0, 0.05);
+	border-left: 1.1em solid black;
+	transform: translateZ(0);
+	animation: load8 .5s infinite linear;
+}
+@-webkit-keyframes load8 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes load8 {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }

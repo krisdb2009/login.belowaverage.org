@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>below average - login</title>
-        <link rel="stylesheet" type="text/css" href="src/css/index.css">
+	<head>
+		<title>below average - login</title>
+		<link rel="stylesheet" type="text/css" href="src/css/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=.75">
-        <script src="src/js/index.js"></script>
-    </head>
-    <body>
+		<script src="src/js/jquery-3.2.1.min.js"></script>
+		<script src="src/js/index.js"></script>
+	</head>
+	<body>
+		<div id="loader" class="loader"></div>
 		<div id="body">
 			<div id="valign">
 				<img id="logo" src="src/img/logo.svg">
 				<div id="box">
-					<input name="username" type="text" placeholder="Username">
+					<input name="username" type="text" placeholder="Username" autofocus>
 					<input name="password" type="password" placeholder="Password">
-					<button>Signup</button><button>Login</button>
+					<button id="su">Signup</button><button id="li">Login</button>
 				</div>
 			</div>
 		</div>
 		<div id="footer">
-			<span>Below Average &copy; 2012 - 2017 &bull; <a target="_blank" href="https://belowaverage.org/privacy/">Privacy</a> &bull; <a href="https://belowaverage.org/">Home</a></span>
+			<span>Below Average &copy; 2012 - 2017 &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp; <a target="_blank" href="https://belowaverage.org/privacy/">Privacy</a> &nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp; <a href="https://belowaverage.org/">Home</a></span>
 		</div>
-    </body>
+	</body>
 </html>
