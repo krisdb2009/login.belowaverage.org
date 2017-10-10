@@ -56,7 +56,7 @@ body {
 	background-color:whitesmoke;
 	box-shadow:inset 1px 1px 0px white, inset -1px -1px 0px white, 0px 10px 20px rgba(0,0,0,.05);
 }
-#box input {
+#box input[type=text], #box input[type=password] {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -91,6 +91,9 @@ body {
 }
 #box button:active {
 	background-color:whitesmoke;
+}
+#box input[type=checkbox] {
+	margin-top:25px;
 }
 #footer {
 	height:50px;

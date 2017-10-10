@@ -7,9 +7,6 @@ $(document).ready(function() {
 	}
 	$('#li').click(function() {
 		$('#body, #loader').addClass('fade');
-		setTimeout(function() {
-			window.location = '/';
-		}, 5000);
 	});
 	$(document).keypress(function(e) {
 		if(e.keyCode == 13) {
