@@ -18,17 +18,7 @@ body {
 	background-image:url('../img/bg.jpg');
 	background-size:100% 100%;
 	transition:.3s;
-	animation:fadein .5s;
 	background-color:white;
-}
-@keyframes fadein {
-	0% {
-		opacity:0;
-	} 55% {
-		opacity:0;
-	} 100% {
-		opacity:1;
-	}
 }
 #body.fade {
 	opacity:0;
