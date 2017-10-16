@@ -1,15 +1,10 @@
 var hash = window.location.hash.substr(1);
 var username = '';
 var password = '';
-var script = '';
+var url = location.origin + location.pathname;
 if(hash.split(':').length == 2 && hash.split('@').length == 2) {
 	username = hash.split(':')[0].split('@')[1];
 	password = hash.split(':')[1];
-}
-if(username !== '' && password !== '') {
-	script = hash.split('@')[0];
-} else {
-	script = hash;
 }
 function fadeOn() {
 	$('#body, #loader').addClass('fade');
@@ -30,11 +25,10 @@ $(document).ready(function() {
 		}
 	};
 	$.getJSON('config/config.json', function(data) {
-		if(script !== '' && $.inArray(script, data) !== -1) {
-			$.get('config/scripts/'+script+'.js', ready);
-			history.pushState({}, null, './');
+		if(typeof data[url] == 'string') {
+			$.get('config/scripts/'+data[url]+'.js', ready);
 		} else {
-			$.get('config/scripts/default.js', ready);
+			ready();
 		}
 	});
 	$('#li').click(function() {
