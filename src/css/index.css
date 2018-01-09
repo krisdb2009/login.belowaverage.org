@@ -42,6 +42,7 @@ body {
 #box {
 	display:inline-block;
 	padding:30px;
+	padding-top:0px;
 	border:1px solid lightgray;
 	background-color:whitesmoke;
 	box-shadow:inset 1px 1px 0px white, inset -1px -1px 0px white, 0px 10px 20px rgba(0,0,0,.05);
@@ -111,6 +112,15 @@ body {
 }
 #loader.fade {
 	opacity:1;
+}
+#error {
+	display:inline-block;
+	color:#c20000;
+	font-size:14px;
+	width:300px;
+	line-height:22px;
+	padding-top:15px;
+	padding-bottom:15px;
 }
 .loader, .loader:after {
 	border-radius: 50%;
