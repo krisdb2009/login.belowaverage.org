@@ -1,5 +1,6 @@
 {
 	"https://email.belowaverage.org/login/": "email",
 	"https://webdows.belowaverage.org/login/": "webdows",
-	"https://api.belowaverage.org/login/": "promise"
+	"https://api.belowaverage.org/login/": "promise",
+	"https://login.belowaverage.org/": "websocket"
 }

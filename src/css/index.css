@@ -139,6 +139,13 @@ body {
 	transform: translateZ(0);
 	animation: load8 .5s infinite linear;
 }
+#progress {
+	font-size:22px;
+	position:absolute;
+	top:calc(50% + 50px);
+	left:0px;
+	width:100%;
+}
 @-webkit-keyframes load8 {
 	0% {
 		transform: rotate(0deg);
