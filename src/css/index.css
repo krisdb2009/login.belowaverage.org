@@ -33,11 +33,34 @@ body {
 #logo {
 	width:200px;
 	height:200px;
-	display:block;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:30px;
 	margin-top:-35px;
+	position:relative;
+	background-image:url('https://static.belowaverage.org/img/logo/logo.svg');
+	background-size:100% 100%;
+	animation:popFade .5s;
+}
+#logo::after {
+	content:'';
+	width:200px;
+	height:200px;
+	top:0px;
+	left:0px;
+	position:absolute;
+	background-image:url('https://static.belowaverage.org/img/logo/logo.gif');
+	background-size:100% 100%;
+	filter:brightness(120%);
+}
+@keyframes popFade {
+	from {
+		opacity:0;
+		transform:translate(0px, 100px);
+	} to {
+		opacity:1;
+		transform:translate(0px, 0px);
+	}
 }
 #box {
 	display:inline-block;
