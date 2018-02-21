@@ -1,29 +1,30 @@
-if(document.location.hostname == 'email.belowaverage.org') {
+$('#li').click(function() {
+	$('#error').text('');
+	$('#progress').text('Authenticating...');
 	setTimeout(function() {
-		fadeOn();
-		$.get('/admin/logout.php', function() {
+		$('#progress').text('Recieving response...');
+	}, 1000);
+	$.post('/owa/auth.owa', {
+		destination: 'https://ba-ut2.ad.belowaverage.org/owa',
+		flags: 4,
+		forcedownlevel: 0,
+		username: $('input[name=username]').val(),
+		password: $('input[name=password]').val(),
+		passwordText: '',
+		isUtf8: 1
+	}, function(data, status, xhr) {
+		if(xhr.getResponseHeader('x-calculatedbetarget') !== null) {
+			window.location = '/';
+		} else {
 			fadeOff();
-		});
+			$('#error').text('Authentication failed. Please check your username or password.');
+		}
+	}).fail(function(data) {
+		fadeOff();
+		if($(data.responseText).find('div.errorDetails').text() !== '') {
+			$('#error').text($(data.responseText).find('div.errorDetails').text());
+		} else {
+			$('#error').text('Unspecified Error.');
+		}
 	});
-	$.get('https://email.belowaverage.org/?/AppData', function(data) {
-		eval(data);
-		$('#li').click(function() {
-			$.post('https://email.belowaverage.org/?/Ajax/&q[]=/0/', {
-				Email: $('input[name=username]').val(),
-				Password: $('input[name=password]').val(),
-				Action: 'Login',
-				XToken: rainloopAppData.Token
-			}, function() {
-				$.post('/admin/', {
-					page: 'background_login',
-					username: $('input[name=username]').val(),
-					password: $('input[name=password]').val()
-				}, function() {
-					window.location = 'https://email.belowaverage.org/';
-				});
-			});
-		});
-	});
-} else {
-	window.location = 'https://email.belowaverage.org/login/#'+hash;
-}
+});
