@@ -7,10 +7,10 @@ if(hash.split(':').length == 2 && hash.split('@').length == 2) {
 	password = hash.split(':')[1];
 }
 function fadeOn() {
-	$('#body, #loader').addClass('fade');
+	$('#body, #loader, #footer').addClass('fade');
 }
 function fadeOff() {
-	$('#body, #loader').removeClass('fade');
+	$('#body, #loader, #footer').removeClass('fade');
 }
 $(document).ready(function() {
 	function ready() {

@@ -20,7 +20,21 @@ body {
 	transition:.3s;
 	background-color:white;
 }
-#body.fade {
+#footer {
+	height:50px;
+	border-top:1px solid lightgray;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	background-color:whitesmoke;
+	color:rgba(0,0,0,.8);
+	font-size:14px;
+	line-height:49px;
+	box-shadow:inset 0px 1px 0px white, 0px 0px 20px rgba(0,0,0,.05);
+	transition:.3s;
+}
+#body.fade, #footer.fade {
 	opacity:0;
 }
 #valign {
@@ -105,22 +119,6 @@ body {
 }
 #box button:active {
 	background-color:whitesmoke;
-}
-#box input[type=checkbox] {
-	margin-top:25px;
-}
-#footer {
-	height:50px;
-	border-top:1px solid lightgray;
-	position:fixed;
-	bottom:0px;
-	left:0px;
-	width:100%;
-	background-color:whitesmoke;
-	color:rgba(0,0,0,.8);
-	font-size:14px;
-	line-height:49px;
-	box-shadow:inset 0px 1px 0px white, 0px 0px 20px rgba(0,0,0,.05);
 }
 #box input[name=password] {
 	background-image:url('../img/pass.png');

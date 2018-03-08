@@ -2,7 +2,7 @@ $('#li').click(function() {
 	$('#error').text('');
 	$('#progress').text('Authenticating...');
 	setTimeout(function() {
-		$('#progress').text('Recieving response...');
+		$('#progress').text('Receiving response...');
 	}, 1000);
 	$.post('/owa/auth.owa', {
 		destination: 'https://ba-ut2.ad.belowaverage.org/owa',
