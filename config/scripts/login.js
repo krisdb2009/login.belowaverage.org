@@ -1,6 +1,3 @@
-if(window.location.hash == '#logout') {
-	localStorage.AUTH = '';
-}
 var ran = false;
 function showForm(e) {
 	fadeOff();
@@ -29,6 +26,10 @@ $(document).ready(function() {
 			if($.inArray(e.origin, trusted) !== -1 && !ran) {
 				ran = true;
 				parent.postMessage('ready', e.origin);
+				if(window.location.hash == '#logout') {
+					$.post('https://api.belowaverage.org/v1/AUTH/', {AUTH: localStorage.AUTH, logout: true});
+					localStorage.AUTH = '';
+				}
 				if(typeof localStorage.AUTH == 'string' && localStorage.AUTH.length == 32) {
 					$('#progress').text('Authenticating...');
 					$.post('https://api.belowaverage.org/v1/AUTH/', {AUTH: localStorage.AUTH}, function() {
