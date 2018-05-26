@@ -44,7 +44,7 @@ $(document).ready(function() {
 			} else if(!ran) {
 				ran = true;
 				$('#progress').text('');
-				$('#error').html('<b>WARNING</b>: This page is not authorized to perform login requests.');
+				$('#error').html('<b>WARNING</b>: This origin ('+e.origin+') is not authorized to perform login requests.');
 				$('input[name=username], input[name=password], #li').attr('disabled', true);
 				fadeOff();
 			}
