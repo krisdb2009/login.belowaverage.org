@@ -5,7 +5,7 @@ $('#li').click(function() {
 		$('#progress').text('Receiving response...');
 	}, 1000);
 	$.post('/owa/auth.owa', {
-		destination: 'https://ba-ut2.ad.belowaverage.org/owa',
+		destination: 'https://email.belowaverage.org/owa',
 		flags: 4,
 		forcedownlevel: 0,
 		username: $('input[name=username]').val(),
