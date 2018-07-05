@@ -1,22 +1,17 @@
-$('#progress').text('Requesting login info...');
+$('#progress').text('Retrieving authenticity token...');
 $(document).ready(fadeOn);
-$('<iframe src="/?login"></iframe>').hide().appendTo('body').on('load', function() {
+$.get('/users/sign_in/', function(response) {
 	fadeOff();
 	$('#li').click(function() {
-		$('#progress').text('Authenticating...');
-		$.post('/'+$('iframe').contents().find('form.pull-right.ng-pristine.ng-valid').attr('action'), {
-			wicket: 'bookmarkablePage::com.gitblit.wicket.pages.MyDashboardPage',
-			id59_hf_0: '',
+		fadeOn();
+		$('#progress').text('Trying logon...');
+		$.post('/users/auth/ldapmain/callback', {
+			authenticity_token: $(response).find('input[name=authenticity_token]').val(),
 			username: $('input[name=username]').val(),
 			password: $('input[name=password]').val()
-		}, function(data, status, xhr) {
-			var error = $(data).find('ul.feedbackPanel span.feedbackPanelERROR').text();
-			if(error !== '') {
-				fadeOff();
-				$('#error').text(error);
-			} else {
-				window.location = '/';
-			}
+		}, function() {
+			$('#progress').text('Redirecting...');
+			window.location.href = '/';
 		});
 	});
 });
