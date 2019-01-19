@@ -3,6 +3,7 @@
 		"https://account.belowaverage.org": "token",
 		"https://webdows.belowaverage.org": "token",
 		"https://email.belowaverage.org": "crypt",
+		"https://rdp.belowaverage.org": "crypt",
 		"about:": "token"
 	}
 }
