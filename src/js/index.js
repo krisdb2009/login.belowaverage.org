@@ -56,6 +56,7 @@ function showForm(e) {
 	});
 }
 function passCredOrToken() {
+	$('#progress').text('Logging on...');
 	if(trust[origin] == 'token') { //If credential type is token.
 		parent.postMessage(localStorage.AUTH_Token, origin); //Pass token to parent.
 	} else if(trust[origin] == 'crypt') { //If credential type is crypt.
