@@ -4,6 +4,7 @@
 		"https://webdows.belowaverage.org": "token",
 		"https://email.belowaverage.org": "crypt",
 		"https://rdp.belowaverage.org": "crypt",
+		"https://portal.belowaverage.org": "crypt",
 		"about:": "token"
 	}
 }
