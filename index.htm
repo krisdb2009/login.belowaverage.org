@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>below average - Single Sign On</title>
+        <!--<link rel="shortcut icon" href="https://material.io/favicon.ico">-->
+        <link rel="stylesheet" href="https://static.belowaverage.org/mdc/fonts/roboto.css">
+        <link rel="stylesheet" href="https://static.belowaverage.org/mdc/fonts/material.css">
+        <link href="https://static.belowaverage.org/mdc/mdc-below-average-global.css" rel="stylesheet">
+        <link href="index.css" rel="stylesheet">
+        <script src="https://static.belowaverage.org/mdc/mdc.js"></script>
+    </head>
+    <body>
+        <div class="mdc-card login-card mdc-elevation--z2">
+            <div class="picture mdc-elevation--z1"></div>
+            <div class="card-padding">
+                <h1 class="mdc-typography--headline5 login-header">below average - SSO</h1>
+                <div class="login-input mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                    <i class="material-icons mdc-text-field__icon">person_outline</i>
+                    <input type="username" class="mdc-text-field__input" name="username">
+                    <div class="mdc-line-ripple"></div>
+                    <label for="text-field-hero-input" class="mdc-floating-label">User Name</label>
+                </div>
+                <br>
+                <br>
+                <div class="login-input mdc-text-field mdc-text-field--with-leading-icon" data-mdc-auto-init="MDCTextField">
+                    <i class="material-icons mdc-text-field__icon">lock</i>
+                    <input type="password" class="mdc-text-field__input" name="password">
+                    <div class="mdc-line-ripple"></div>
+                    <label for="text-field-hero-input" class="mdc-floating-label">Password</label>
+                </div>
+            </div>
+            <div class="remember-me">
+                <div class="mdc-form-field" data-mdc-auto-init="MDCFormField">
+                    <div class="mdc-checkbox" data-mdc-auto-init="MDCCheckbox">
+                        <input type="checkbox" class="mdc-checkbox__native-control" id="remember-me-check"/>
+                        <div class="mdc-checkbox__background">
+                            <svg class="mdc-checkbox__checkmark" viewBox="0 0 24 24">
+                                <path class="mdc-checkbox__checkmark-path" fill="none" d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
+                            </svg>
+                            <div class="mdc-checkbox__mixedmark"></div>
+                        </div>
+                        <div class="mdc-checkbox__ripple"></div>
+                    </div>
+                    <label for="remember-me-check">Remember Me</label>
+                </div>
+            </div>
+            <div class="login-actions">
+                <div class="mdc-card__action-buttons">
+                    <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">
+                        <span class="mdc-button__ripple"></span>
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">assignment</i>
+                        <span>Sign Up</span>
+                    </button>
+                    <button class="mdc-button mdc-button--raised" data-mdc-auto-init="MDCRipple">
+                        <span class="mdc-button__ripple"></span>
+                        <i class="material-icons mdc-button__icon" aria-hidden="true">assignment_ind</i>
+                        <span>Sign In</span>
+                    </button>
+                </div>
+            </div>
+            <div class="under-links">
+                <a href="https://belowaverage.org/" target="_BLANK" class="mdc-button" data-mdc-auto-init="MDCRipple">
+                    <span class="mdc-button__ripple"></span>
+                    <span>Home</span>
+                </a>
+                <span>&bull;</span>
+                <a href="https://belowaverage.org/privacy/" target="_BLANK" class="mdc-button" data-mdc-auto-init="MDCRipple">
+                    <span class="mdc-button__ripple"></span>
+                    <span>Privacy</span>
+                </a>
+                <span>&bull;</span>
+                <button class="mdc-button" data-mdc-auto-init="MDCRipple">
+                    <span class="mdc-button__ripple"></span>
+                    <span>Help</span>
+                </button>
+            </div>
+        </div>
+    </body>
+    <script>
+        window.mdc.autoInit();
+    </script>
+</html>

@@ -1,0 +1,73 @@
+* {
+    user-select: none;
+}
+
+html, body {
+    padding:0px;
+    margin:0px;
+    width:100%;
+    height:100%;
+}
+
+body {
+    background-image:url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.login-card {
+    position: fixed;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    height: 375px;
+    width: 350px;
+    text-align: center;
+}
+
+.login-header {
+    margin-top: 65px;
+}
+
+.login-actions {
+    margin-top: 15px;
+}
+
+.login-actions button {
+    margin: auto;
+}
+
+.login-card .card-padding {
+    padding: 0px 30px;
+}
+
+.login-input {
+    width: 100%;
+}
+
+.login-card .picture {
+    position:absolute;
+    top:-50px;
+    left:calc(50% - 50px);
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    background-color:white;
+    background-image:url('https://static.belowaverage.org/img/logo/logo.svg');
+    background-size:100% 100%;
+}
+.login-card .under-links {
+    margin-top:50px;
+}
+.login-card .under-links * {
+    color:white;
+    text-transform:initial;
+    font-size:12px;
+}
+.login-card .remember-me {
+    margin-top:15px;
+    text-align:left;
+    padding: 0px 20px;
+}
+.login-card .remember-me label {
+    font-size:12px;
+}
