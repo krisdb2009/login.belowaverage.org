@@ -1,0 +1,1261 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: normal;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+    font-size: 0.9em;
+}
+
+#noScript {
+    margin: 16px;
+    color: Black;
+}
+
+:lang(en-GB) {
+    quotes: '\2018' '\2019' '\201C' '\201D';
+}
+
+:lang(zh) {
+    font-family: 微软雅黑;
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+@-moz-viewport {
+    width: device-width;
+}
+
+@-o-viewport {
+    width: device-width;
+}
+
+@-webkit-viewport {
+    width: device-width;
+}
+
+@viewport {
+    width: device-width;
+}
+
+/* Theme layout styles */
+
+#fullPage {
+    position: absolute;
+    bottom: 28px;
+    top: 0px;
+    width: 100%;
+}
+
+#brandingWrapper {
+    background-color: #4488dd;
+    height: 100%;
+    width: 100%;
+}
+
+#branding {
+    /* A background image will be added to the #branding element at run-time once the illustration image is configured in the theme. 
+       Recommended image dimensions: 1420x1200 pixels, JPG or PNG, 200 kB average, 500 kB maximum. */
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+#contentWrapper {
+    background-color: transparent;
+    height: 0px;
+    width: 100%;
+}
+
+#content {
+    /* Set content to center */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: #fff;
+
+    /* Set size margins */
+    margin-bottom: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 264px;
+    min-width: 320px;
+    max-width: 412px;
+    width: 360px; 
+    height: auto;
+    padding: 36px;
+   
+    /* Add drop shadow */
+    box-shadow: 0 2px 3px rgba(0,0,0,0.55);
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+#header {
+    font-size: 2em;
+    font-weight: lighter;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math";
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+    height: 36px;
+    width: 338px;
+    background-color: transparent;
+}
+
+    #header img {
+        /* Logo image recommended dimension: 108x24  or 338x24 (elongated), 4 kB average, 10 kB maximum. Transparent PNG strongly recommended. */
+        width: auto;
+        height: 100%;
+        position: relative;
+        top: -7px;
+    }
+
+#loginMessage {
+    box-sizing: border-box;
+    color: rgb(38, 38, 38);
+    direction: ltr;
+    display: block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-weight: 300;
+    font-size: 1.7em;
+    height: auto;
+    line-height: 28px;
+    margin-bottom: 16px;
+    margin-left: -2px;
+    margin-right: -2px;
+    margin-top: 16px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    width: 342px;
+    background-color: transparent;
+}
+
+#loginForm {
+    width: 338px;
+}
+
+#workArea, #header {
+    word-wrap: break-word;
+}
+
+#workArea {
+    margin-bottom: 4%;
+    margin-top: 16px;
+    background-color: transparent;
+}
+
+#footerPlaceholder {
+    height: 0px;
+}
+
+#footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0px;
+    box-sizing: border-box;
+    clear: both;
+    color: rgb(38, 38, 38);
+    direction: ltr;
+    display: block;
+    filter: none;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 20px;
+    overflow-x: visible;
+    overflow-y: visible;
+    position: fixed;
+    text-align: left;
+    text-size-adjust: 100%;
+    width: 100%;
+}
+
+#footerLinks {
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.pageLink.footerLink {
+    color: rgb(255, 255, 255);
+}
+
+#copyright {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    direction: ltr;
+    display: none;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 8px;
+    margin-right: 8px;
+    text-align: left;
+    text-size-adjust: 100%;
+}
+
+#userNameArea, #passwordArea {
+    box-sizing: border-box;
+    color: rgb(38, 38, 38);
+    direction: ltr;
+    display: block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-weight: normal;
+    height: 52px;
+    line-height: 20px;
+    margin-left: 0px;
+    margin-right: -2px;
+    text-align: left;
+    text-size-adjust: 100%;
+    width: 342px;
+}
+
+#updatePasswordForm #submitButton, #cancelButton {
+    width: 48%;
+} 
+
+#oldPasswordArea, #newPasswordArea {
+    margin-bottom: 7px;
+}
+
+#errorMessage{
+    margin-top: 5px;
+}
+
+.pageLink {
+    padding-left: 5px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    direction: ltr;
+    display: inline-block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 12px;
+    font-weight: normal;
+    height: 28px;
+    line-height: 28px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-align: left;
+    text-size-adjust: 100%;
+    text-decoration: underline;
+}
+
+/* Common content styles */
+
+.clear {
+    clear: both;
+}
+
+.float {
+    float: left;
+}
+
+.floatReverse {
+    float: right;
+}
+
+.indent {
+    margin-left: 16px;
+}
+
+.indentNonCollapsible {
+    padding-left: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+.notHidden {
+    display: inherit;
+}
+
+.error {
+    color: #e81123;
+}
+
+.actionLink {
+    margin-top: 5px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+a {
+    color: #0067b8;
+    text-decoration: none;
+    background-color: transparent;
+    word-wrap: normal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul, ol, dd {
+    padding: 0 0 0 16px;
+}
+
+h1, h2, h3, h4, h5, label {
+    margin-bottom: 8px;
+}
+
+.submitMargin {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.topFieldMargin {
+    margin-top: 8px;
+}
+
+.fieldMargin {
+    margin-bottom: 8px;
+}
+
+.groupMargin {
+    margin-bottom: 0px;
+}
+
+.sectionMargin {
+    margin-bottom: 64px;
+}
+
+.block {
+    display: block;
+}
+
+.autoWidth {
+    width: auto;
+}
+
+.fullWidth {
+    width: 342px;
+}
+
+.fullWidthIndent {
+    width: 326px;
+}
+
+.smallTopSpacing {
+    margin-top: 15px;
+}
+
+.mediumTopSpacing {
+    margin-top: 25px;
+}
+
+.largeTopSpacing {
+    margin-top: 35px;
+}
+
+.smallBottomSpacing {
+    margin-bottom: 5px;
+}
+
+.mediumBottomSpacing {
+    margin-bottom: 15px;
+}
+
+.largeBottomSpacing {
+    margin-bottom: 25px;
+}
+
+#openingMessage {
+    margin-bottom: 4px;
+}
+
+input {
+    max-width: 100%;
+    font-family: inherit;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    vertical-align: middle;
+    margin-bottom: 0px;
+}
+
+.paginatedPageForm {
+    height: 43px;
+}
+
+.errorUsernamePaginated {
+    top: -10px;
+}
+
+.errorText {
+    display: inline-block;
+}
+
+.authOptionsError {
+    display: inline-block;
+}
+
+.authOptionsErrorText {
+    padding-bottom: 20px;
+    display: inline-block;
+}
+
+.error {
+    position: relative;
+}
+
+#kmsiArea {
+    padding-bottom: 16px;
+}
+
+    #kmsiArea.kmsiAreaPaginated {
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+
+.authOptionsTitlePaginated {
+    font-weight: normal;
+    font-size: 1.25em;
+    font-family: "Segoe UI Webfont",-apple-system,"Helvetica Neue","Lucida Grande","Roboto","Ebrima","Nirmala UI","Gadugi","Segoe Xbox Symbol","Segoe UI Symbol","Meiryo UI","Khmer UI","Tunga","Lao UI","Raavi","Iskoola Pota","Latha","Leelawadee","Microsoft YaHei UI","Microsoft JhengHei UI","Malgun Gothic","Estrangelo Edessa","Microsoft Himalaya","Microsoft New Tai Lue","Microsoft PhagsPa","Microsoft Tai Le","Microsoft Yi Baiti","Mongolian Baiti","MV Boli","Myanmar Text","Cambria Math"
+}
+
+.buttonAreaPaginated {
+    padding: 0px 0px 55px 0px;
+    position: relative;
+}
+
+.bannerContainer {
+    padding-bottom: 20px;
+}
+
+.identityBanner{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.09em;
+    padding-left: 8px;
+}
+
+.back {
+    float: left;
+}
+
+.back:hover {
+    background: #f4f4f4;
+}
+
+#optionIcon {
+    float: left;
+}
+
+.optionButtonContainer:hover {
+    background: #f4f4f4;
+}
+
+.optionButton {
+    align-items: flex-start;
+    box-sizing: border-box;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    height: 36px;
+    letter-spacing: normal;
+    line-height: 18px;
+    margin-bottom: 11px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    min-width: 165px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    position: relative;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-appearance: none;
+    -webkit-rtl-ordering: logical;
+    -webkit-border-image: none;
+}
+
+span.next {
+    align-items: flex-start;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    cursor: pointer;
+    direction: ltr;
+    display: inline-block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    height: 36px;
+    letter-spacing: normal;
+    line-height: 21px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 4px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 100%;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-appearance: none;
+    -webkit-rtl-ordering: logical;
+    -webkit-border-image: none;
+    height: 32px;
+    width: 108px;
+    background-color: rgb(0, 103, 184);
+    border-bottom-color: rgb(0, 103, 184);
+    border-top-color: rgb(0, 103, 184);
+    border-right-color: rgb(0, 103, 184);
+    border-left-color: rgb(0, 103, 184);
+    color: rgb(255, 255, 255);
+    margin-left: -2px;
+    left:236px;
+}
+
+#nextButtonArea {
+    margin-top: 87px;
+}
+
+span.submit.submitPaginated {
+    height: 32px;
+    line-height: 21px;
+    min-width: 15px;
+    bottom: -75px;
+    width: 108px;
+    float: right;
+}
+
+    span.submit, input[type="submit"] {
+        align-items: flex-start;
+        background-color: rgb(0, 103, 184);
+        border-bottom-color: rgb(0, 103, 184);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-image-outset: 0px;
+        border-image-repeat: stretch;
+        border-image-slice: 100%;
+        border-image-source: none;
+        border-image-width: 1;
+        border-left-color: rgb(0, 103, 184);
+        border-left-style: solid;
+        border-left-width: 1px;
+        border-right-color: rgb(0, 103, 184);
+        border-right-style: solid;
+        border-right-width: 1px;
+        border-top-color: rgb(0, 103, 184);
+        border-top-style: solid;
+        border-top-width: 1px;
+        box-sizing: border-box;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        direction: ltr;
+        display: inline-block;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant-caps: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-weight: normal;
+        height: 36px;
+        letter-spacing: normal;
+        line-height: 25px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        min-width: 165px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        padding-bottom: 4px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 4px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        text-overflow: ellipsis;
+        text-rendering: auto;
+        text-shadow: none;
+        text-size-adjust: 100%;
+        touch-action: manipulation;
+        user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+        word-spacing: 0px;
+        writing-mode: horizontal-tb;
+        -webkit-appearance: none;
+        -webkit-rtl-ordering: logical;
+        -webkit-border-image: none;
+    }
+
+    input[type="submit"]:hover, span.submit:hover, span.next:hover {
+        background: rgb(0, 85, 152);
+        border: 1px solid rgb(0, 85, 152);
+    }    
+
+span.rightHalfWidthButton {
+    width: 108px;
+    float: right;
+}
+
+input.text.textPaginated {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input.text.textPaginated:focus {
+    border: 1px solid #0067B8;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+input.text {
+    background-color: rgba(255, 255, 255, 0.4);
+    background-image: none;
+    border-bottom-color: rgba(0, 0, 0, 0.6);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgba(0, 0, 0, 0.6);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.6);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgba(0, 0, 0, 0.6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    box-sizing: border-box;
+    color: rgb(38, 38, 38);
+    cursor: auto;
+    direction: ltr;
+    display: block;
+    font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+    font-size: 15px;
+    font-stretch: normal;
+    font-style: normal;
+    font-variant-caps: normal;
+    font-variant-ligatures: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    height: 36px;
+    letter-spacing: normal;
+    line-height: 20px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    max-width: 100%;
+    outline-color: rgb(38, 38, 38);
+    outline-style: none;
+    outline-width: 0px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 6px;
+    text-align: start;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: none;
+    user-select: text;
+    word-spacing: 0px;
+    writing-mode: horizontal-tb;
+    -webkit-appearance: none;
+    -webkit-locale: "en";
+    -webkit-rtl-ordering: logical;
+    -webkit-border-image: none;
+}
+
+
+
+select {
+    height: 28px;
+    min-width: 60px;
+    max-width: 100%;
+    margin-bottom: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    box-shadow: none;
+    padding: 2px;
+    font-family: inherit;
+}
+
+h1, .giantText {
+    font-size: 2.0em;
+    font-weight: lighter;
+}
+
+h2, .bigText {
+    font-size: 1.33em;
+    font-weight: lighter;
+}
+
+h3, .normalText {
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+h4, .smallText {
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 0.7em;
+    font-weight: normal;
+}
+
+h5, .tinyText {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+.hint {
+    color: #999999;
+}
+
+.emphasis {
+    font-weight: 700;
+    color: #2F2F2F;
+}
+
+.smallIcon {
+    height: 20px;
+    padding-right: 12px;
+    vertical-align: middle;
+}
+
+.largeIcon {
+    height: 48px;
+    /* width:48px; */
+    vertical-align: middle;
+}
+
+.largeTextNoWrap {
+    height: 48px;
+    display: table-cell; /* needed when in float*/
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+.idp {
+    height: 48px;
+    clear: both;
+    padding: 8px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .idp:hover {
+        background-color: #cccccc;
+        cursor: pointer;
+    }
+
+.idpDescription {
+    width: 80%;
+    cursor: pointer;
+}
+
+.submit.nextButton{
+    margin-left: -2px;
+}
+
+.submitMargin.submitModified {
+    margin-bottom: 60px;
+}
+
+.submit.modifiedSignIn{
+    display: block;
+    width: auto;
+    float: right;
+}
+
+#submissionArea{
+    margin-top: 8px;
+}
+
+@media (max-width: 600px), (max-height: 392px){
+    #content {
+        /* Set content to center */
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        background-color: #fff;
+        /* Set size margins */
+        margin-bottom: 28px;
+        margin-left: auto;
+        margin-right: auto;
+        min-height: 290px;
+        min-width: 320px;
+        max-width: 412px;
+        width: calc(100% - 40px);
+        height: auto;
+        padding: 23px 18px 0px 18px;
+        /* Add drop shadow */
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+        border: 0px solid rgba(0,0,0,0);
+    }
+
+    #footer {
+        background-color: rgba(0, 0, 0, 0.6);
+        bottom: 0px;
+        box-sizing: border-box;
+        clear: both;
+        color: rgb(38, 38, 38);
+        direction: ltr;
+        display: none;
+        filter: none;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", Roboto, Ebrima, "Nirmala UI", Gadugi, "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", Tunga, "Lao UI", Raavi, "Iskoola Pota", Latha, Leelawadee, "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-size: 15px;
+        font-weight: normal;
+        height: 28px;
+        line-height: 20px;
+        overflow-x: visible;
+        overflow-y: visible;
+        position: fixed;
+        text-align: left;
+        text-size-adjust: 100%;
+        width: 100%;
+    }
+
+    #brandingWrapper {
+        display: none;
+    }
+
+    input.text {
+        background-color: rgba(255, 255, 255, 0.4);
+        background-image: none;
+        border-bottom-color: rgba(0, 0, 0, 0.8);
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-color: rgba(0, 0, 0, 0.8);
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-color: rgba(0, 0, 0, 0.8);
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-color: rgba(0, 0, 0, 0.8);
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(38, 38, 38);
+        direction: ltr;
+        display: block;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-language-override: normal;
+        font-size: 15px;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-weight: 400;
+        height: 36px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        outline-color: rgb(38, 38, 38);
+        outline-style: none;
+        outline-width: 0px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 6px;
+        text-align: start;
+        width: 350px;
+    }
+
+    input.text:focus {
+        background-color: rgba(255, 255, 255, 0.4);
+        background-image: none;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-left-style: solid;
+        border-left-width: 0px;
+        border-right-style: solid;
+        border-right-width: 0px;
+        border-top-style: solid;
+        border-top-width: 0px;
+        box-sizing: border-box;
+        color: rgb(38, 38, 38);
+        direction: ltr;
+        display: block;
+        font-family: "Segoe UI Webfont", -apple-system, "Helvetica Neue", "Lucida Grande", "Roboto", "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol", "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi", "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa", "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa", "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli", "Myanmar Text", "Cambria Math";
+        font-feature-settings: normal;
+        font-kerning: auto;
+        font-language-override: normal;
+        font-size: 15px;
+        font-size-adjust: none;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-variant-alternates: normal;
+        font-variant-caps: normal;
+        font-variant-east-asian: normal;
+        font-variant-ligatures: normal;
+        font-variant-numeric: normal;
+        font-variant-position: normal;
+        font-weight: 400;
+        height: 36px;
+        line-height: 20px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+        max-width: 100%;
+        outline-color: rgb(38, 38, 38);
+        outline-style: none;
+        outline-width: 0px;
+        padding-bottom: 6px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 6px;
+        text-align: start;
+        width: 350px;
+        border-color: rgb(0, 103, 184);
+    }
+    
+    .identityBanner {
+        margin:16px 0px;
+        padding:0px 80px 0px 40px;    
+    }
+    
+    .identityBannerImage {
+        left: -50px;   
+    }
+}
+
+/* Targets displays using any of Windows’ High Contrast Mode themes: */
+@media screen and (-ms-high-contrast: active) {
+    textarea::-webkit-input-placeholder {
+        color: #00FF00;
+    }
+
+    textarea:-moz-placeholder { /* Firefox 18- */
+        color: #00FF00;
+    }
+
+    textarea::-moz-placeholder { /* Firefox 19+ */
+        color: #00FF00;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #00FF00;
+    }
+}
+
+/* Targets displays using the Windows’ "High Contrast Black" theme: */
+@media screen and (-ms-high-contrast: white-on-black) {
+    #contentWrapper {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    .idp:hover {
+        background-color: #ffffff;
+        color: #000000;
+    }
+    #brandingWrapper {
+        background-color: #000000;
+        color: #ffffff;
+    }
+    html, body {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #ffffff;
+    }
+
+    textarea:-moz-placeholder { /* Firefox 18- */
+        color: #ffffff;
+    }
+
+    textarea::-moz-placeholder { /* Firefox 19+ */
+        color: #ffffff;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #ffffff;
+    }
+}
+
+/* Targets displays using the Windows’ "High Contrast White" theme: */
+@media screen and (-ms-high-contrast: black-on-white) {
+    #contentWrapper {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    .idp:hover {
+        background-color: #000000;
+        color: #ffffff;
+    }
+
+    #brandingWrapper {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    html, body {
+        background-color: #ffffff;
+        color: #000000;
+    }
+
+    textarea::-webkit-input-placeholder {
+        color: #000000;
+    }
+
+    textarea:-moz-placeholder { /* Firefox 18- */
+        color: #000000;
+    }
+
+    textarea::-moz-placeholder { /* Firefox 19+ */
+        color: #000000;
+    }
+
+    textarea:-ms-input-placeholder {
+        color: #000000;
+    }
+}
+
+
+/* Below Average Changes Start */
+
+#header {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: calc(50% - 50px);
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 0px 2px 4px 0px #00000033;
+}
+
+#content::before {
+    content: "below average SSO";
+    font-size: 25px;
+    display: block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#companyLogo.logoImage {
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: 0px;
+    border-radius: 50px;
+}
+
+#contentWrapper > #content {
+    padding: 80px 36px 36px 36px !important;
+    border: none;
+    min-height: auto;
+    min-width: auto;
+    max-width: none;
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    box-shadow: 0px 2px 4px 0px #00000033;
+    border-radius: 20px;
+    width: 360px !important;
+}
+
+
+@media (max-width: 600px), (max-height: 392px){
+    #contentWrapper > #content {
+        width: 100% !important;
+        border-radius: 0px;
+    }
+}
+
+#fullPage {
+    bottom: 0;
+}
+
+.error {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+input.text {
+    border: 0px !important;
+    border-bottom: 2px solid rgb(228, 228, 228) !important;
+    background-color: white;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-bottom: 10px;
+}
+
+.fullWidth {
+    width: 100% !important;
+}
+
+#loginForm, #userNameArea, #passwordArea {
+    width: auto;
+}
+
+#userNameArea, #passwordArea {
+    margin-bottom: 10px;
+}
+
+#loginMessage {
+    display: none;
+}
+
+#submissionArea {
+    margin-top: 25px;
+}
+
+span.submit, input[type="submit"] {
+    outline: 0px;
+    background-color: #007aa9;
+    border: 0px;
+}
+input[type="submit"]:hover, span.submit:hover, span.next:hover {
+    background-color: #005b7d;
+    border: 0px;
+}
+input[type="submit"]:active, span.submit:active, span.next:active {
+    background-color: #004c68;
+    border: 0px;
+}
+
+#brandingWrapper {
+    display: block !important;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+#contentWrapper {
+    top:0px;
+    left:0px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#footer::after {
+    font-size:12px;
+    content:"© 2020 below average";
+    margin-left:10px;
+    color:white;
+    line-height:28px;
+}
+
+#brandingWrapper {
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHdpZHRoPSIzMDBtbSIKICAgaGVpZ2h0PSIzMDBtbSIKICAgdmlld0JveD0iMCAwIDMwMCAzMDAiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzgiCiAgIGlua3NjYXBlOmV4cG9ydC1maWxlbmFtZT0iQzpcVXNlcnNcZHlsYW5cRGVza3RvcFxiaXRtYXAucG5nIgogICBpbmtzY2FwZTpleHBvcnQteGRwaT0iNTAuNzE4MjAxIgogICBpbmtzY2FwZTpleHBvcnQteWRwaT0iNTAuNzE4MjAxIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIxLjAgKDQwMzVhNGZiNDksIDIwMjAtMDUtMDEpIgogICBzb2RpcG9kaTpkb2NuYW1lPSJkcmF3aW5nLnN2ZyI+CiAgPGRlZnMKICAgICBpZD0iZGVmczIiPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxNTQxIj4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzEzMTUzODtzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDE1MzciIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM1NTZiZmY7c3RvcC1vcGFjaXR5OjEiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AxNTM5IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MTUxMSIKICAgICAgIGlua3NjYXBlOmNvbGxlY3Q9ImFsd2F5cyI+CiAgICAgIDxzdG9wCiAgICAgICAgIGlkPSJzdG9wMTUwNyIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBzdHlsZT0ic3RvcC1jb2xvcjojMDBmOWZmO3N0b3Atb3BhY2l0eToxIiAvPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDE1MDkiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzFkNDdjNTtzdG9wLW9wYWNpdHk6MSIgLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDE1MDUiCiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiPgogICAgICA8c3RvcAogICAgICAgICBpZD0ic3RvcDE1MDEiCiAgICAgICAgIG9mZnNldD0iMCIKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6I2ZmNzdmNztzdG9wLW9wYWNpdHk6MSIgLz4KICAgICAgPHN0b3AKICAgICAgICAgaWQ9InN0b3AxNTAzIgogICAgICAgICBvZmZzZXQ9IjEiCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNlOTg0MDU7c3RvcC1vcGFjaXR5OjEiIC8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxNDc5Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6IzJjMDA1OTtzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDE0NzUiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiNhMzRhZmY7c3RvcC1vcGFjaXR5OjEiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AxNDc3IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MTQyMC02Ij4KICAgICAgPHN0b3AKICAgICAgICAgc3R5bGU9InN0b3AtY29sb3I6Izc3ZmY4NTtzdG9wLW9wYWNpdHk6MSIKICAgICAgICAgb2Zmc2V0PSIwIgogICAgICAgICBpZD0ic3RvcDE0MTYiIC8+CiAgICAgIDxzdG9wCiAgICAgICAgIHN0eWxlPSJzdG9wLWNvbG9yOiM1Y2ZmZjQ7c3RvcC1vcGFjaXR5OjEiCiAgICAgICAgIG9mZnNldD0iMSIKICAgICAgICAgaWQ9InN0b3AxNDE4IiAvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MTUwNSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDE0MjIiCiAgICAgICB4MT0iNzEuMzA0ODE3IgogICAgICAgeTE9IjEyMy4xNDQ4MyIKICAgICAgIHgyPSItNS40MTM5NTA5IgogICAgICAgeTI9IjM0NC4wMTk0NCIKICAgICAgIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIgogICAgICAgZ3JhZGllbnRUcmFuc2Zvcm09InJvdGF0ZSgtMTY1LjQxNDk1LDg4LjE1Nzk1NCwxNzkuODE3NzYpIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBpbmtzY2FwZTpjb2xsZWN0PSJhbHdheXMiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQxNTExIgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MTQzMiIKICAgICAgIHgxPSI0ODkuODU3MTUiCiAgICAgICB5MT0iNzkuMzc0OTkyIgogICAgICAgeDI9IjQ2My4zOTg4MyIKICAgICAgIHkyPSIyMzUuMzkyMDMiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoLTAuODA0MDU3MjgsLTAuNjI3NDc4OSwxLjMwMjQ5NDIsLTEuNjAxNzk5NCwzNzQuNzg1NjksNzU4Ljg5OTQ0KSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MTQyMC02IgogICAgICAgaWQ9ImxpbmVhckdyYWRpZW50MTQ1MyIKICAgICAgIHgxPSI3Mi42NDY5MDQiCiAgICAgICB5MT0iNzguNDI0NDQ2IgogICAgICAgeDI9IjM0LjM3NzE0NCIKICAgICAgIHkyPSItMTY5Ljk5MTUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xNTMyNSwtMS4xMTQwNzg2LDAuNzI4NDczNzYsMC40MDc0MjIzMywtMzEuMzY2NDMzLDIyOS41OTk2MSkiIC8+CiAgICA8bGluZWFyR3JhZGllbnQKICAgICAgIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMS4xMTc5MjYyLDAsMCwxLjA5NTM4MTcsLTQxNi4yODk4LC0yMDguMTgyNjUpIgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MTQ3OSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDE0ODEiCiAgICAgICB4MT0iMzAwLjExMzEiCiAgICAgICB5MT0iMzAwLjg2OTA4IgogICAgICAgeDI9Ijg3LjY5MDQ3NSIKICAgICAgIHkyPSIxOTEuMjU1OTUiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgLz4KICAgIDxsaW5lYXJHcmFkaWVudAogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIgogICAgICAgeGxpbms6aHJlZj0iI2xpbmVhckdyYWRpZW50MTU0MSIKICAgICAgIGlkPSJsaW5lYXJHcmFkaWVudDE1MzUiCiAgICAgICB4MT0iMTMwLjg3NzkiCiAgICAgICB5MT0iMTU0Ljk0MjMxIgogICAgICAgeDI9IjE3My4zOTk5OSIKICAgICAgIHkyPSItMjEuOTUwNTQxIgogICAgICAgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiCiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0icm90YXRlKC0xNDEuNDU5MiwxMDkuNDIwMywxMzYuODg3MDIpIiAvPgogICAgPGxpbmVhckdyYWRpZW50CiAgICAgICBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KC0wLjk5MjU3MTcxLC0wLjQ0OTE3MTAxLDAuNzY1MDY3NDksLTAuNTgyNzM4NzIsNDMxLjE1ODMzLDM1OS43NjE4NikiCiAgICAgICBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIKICAgICAgIHkyPSItMjEuOTUwNTQxIgogICAgICAgeDI9IjE3My4zOTk5OSIKICAgICAgIHkxPSIxNTQuOTQyMzEiCiAgICAgICB4MT0iMTMwLjg3NzkiCiAgICAgICBpZD0ibGluZWFyR3JhZGllbnQxNTM1LTEiCiAgICAgICB4bGluazpocmVmPSIjbGluZWFyR3JhZGllbnQxNDc5IgogICAgICAgaW5rc2NhcGU6Y29sbGVjdD0iYWx3YXlzIiAvPgogIDwvZGVmcz4KICA8c29kaXBvZGk6bmFtZWR2aWV3CiAgICAgaWQ9ImJhc2UiCiAgICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICAgIGJvcmRlcm9wYWNpdHk9IjEuMCIKICAgICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6em9vbT0iMC4zNSIKICAgICBpbmtzY2FwZTpjeD0iNDAwIgogICAgIGlua3NjYXBlOmN5PSI1NjAiCiAgICAgaW5rc2NhcGU6ZG9jdW1lbnQtdW5pdHM9Im1tIgogICAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9ImxheWVyMSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC1yb3RhdGlvbj0iMCIKICAgICBzaG93Z3JpZD0iZmFsc2UiCiAgICAgd2lkdGg9IjI5OG1tIgogICAgIHNob3dndWlkZXM9InRydWUiCiAgICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iZmFsc2UiCiAgICAgc2hvd2JvcmRlcj0idHJ1ZSIKICAgICBib3JkZXJsYXllcj0idHJ1ZSIKICAgICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0idHJ1ZSIKICAgICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MjAiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iMTAyNyIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTgiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiIC8+CiAgPG1ldGFkYXRhCiAgICAgaWQ9Im1ldGFkYXRhNSI+CiAgICA8cmRmOlJERj4KICAgICAgPGNjOldvcmsKICAgICAgICAgcmRmOmFib3V0PSIiPgogICAgICAgIDxkYzpmb3JtYXQ+aW1hZ2Uvc3ZnK3htbDwvZGM6Zm9ybWF0PgogICAgICAgIDxkYzp0eXBlCiAgICAgICAgICAgcmRmOnJlc291cmNlPSJodHRwOi8vcHVybC5vcmcvZGMvZGNtaXR5cGUvU3RpbGxJbWFnZSIgLz4KICAgICAgICA8ZGM6dGl0bGUgLz4KICAgICAgPC9jYzpXb3JrPgogICAgPC9yZGY6UkRGPgogIDwvbWV0YWRhdGE+CiAgPGcKICAgICBpbmtzY2FwZTpsYWJlbD0iTGF5ZXIgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiPgogICAgPHJlY3QKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KC0wLjgwODgyNDgyLC0wLjU4ODA0OTY3LDAuNjU3NTcwMDYsLTAuNzUzMzkzNCwwLDApIgogICAgICAgc3R5bGU9ImZpbGw6dXJsKCNsaW5lYXJHcmFkaWVudDE0ODEpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjI5MzI0NztzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxO3BhaW50LW9yZGVyOnN0cm9rZSBmaWxsIG1hcmtlcnMiCiAgICAgICBpZD0icmVjdDE0NzMiCiAgICAgICB3aWR0aD0iNTExLjI4NDg1IgogICAgICAgaGVpZ2h0PSI0MjcuMjc3MSIKICAgICAgIHg9Ii01MDQuMTgwMTEiCiAgICAgICB5PSItMjQ4Ljc1NzQiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6dXJsKCNsaW5lYXJHcmFkaWVudDE0NTMpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjI5OTUwOXB4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJNIDI3Ny4zMzQ1NiwzMjEuMTM0MTUgQyAyNTkuNjE0OTYsMjUwLjA1NDMzIDIzMS4wOTg4Myw0Ni42MDc2NzcgMTYuMzg5MTYyLDc2Ljc4ODc2MyAtMTk4LjMyMDUxLDEwNi45NzAxNiAtMTQ5LjcxNDAzLDIxNy45MzA2MSAtMTQ5LjcxNDAzLDIxNy45MzA2MSBMIDIxMC45NDM5NSw0MjguOTQ4NjIgMzM5LjQ2NjUxLDMxMC42NzExIFoiCiAgICAgICBpZD0icGF0aDE0NDUiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXg9Ii0xLjU2MDM1MDMiCiAgICAgICBpbmtzY2FwZTp0cmFuc2Zvcm0tY2VudGVyLXk9IjE0LjcxMjAyNCIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDp1cmwoI2xpbmVhckdyYWRpZW50MTQyMik7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Ik0gNTUuNzcwMTAzLDQxNC4yMTc3NyBDIDIxLjg0MDQxOCwzMTkuNDY1NSA0NS4zNTU1NjEsMjM4LjA5ODIxIDg1LjgwOTQzNywxODcuNjk2NzQgMTI2LjI2MzM1LDEzNy4yOTUyNSAxOTAuNjYyMjUsMTMyLjk2MTcyIDIwMi41MzE1Niw0Mi4zMTUxMjcgYyAxMS44Njk1MSwtOTAuNjQ2NDIxIDk4LjgxNzQyLDU4LjUxOTgyMyA5OC44MTc0Miw1OC41MTk4MjMgTCAxODkuNjY5ODcsNDI3Ljk2ODMzIFoiCiAgICAgICBpZD0icGF0aDE0MTQiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6dXJsKCNsaW5lYXJHcmFkaWVudDE0MzIpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lO3N0cm9rZS13aWR0aDowLjM4NDQ5OTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2UtbWl0ZXJsaW1pdDo0O3N0cm9rZS1kYXNoYXJyYXk6bm9uZTtzdHJva2Utb3BhY2l0eToxIgogICAgICAgZD0iTSA4NC4yOTgxOSwzMjQuMzgxNzIgQyAyMjYuNjAzMzgsNDUuNTE4MjM0IDQ1OC4wNTk0NSw0OC4wMDk2NzQgNDQ0LjY3NjMxLDc5LjEzMDM2NyA0MzEuMjkzMTQsMTEwLjI1MTA1IDI1Ny4xMTM3OCwzODcuOTkxNTUgMjU3LjExMzc4LDM4Ny45OTE1NSBaIgogICAgICAgaWQ9InBhdGgxNDI0IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOnVybCgjbGluZWFyR3JhZGllbnQxNTM1KTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6bm9uZTtzdHJva2Utd2lkdGg6MC4yNjQ1ODNweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgZD0iTSAtMS44NzM2NTg1LDI1Ny45MzE5NCBDIDIyLjU0OTk3OCwxNTEuOTYwOTggMTQ0Ljg4ODcyLDEwMC4xOTk4NiAxNi4zNzc5OTQsMTI3LjEyNDUzIC0xMTIuMTMyNzQsMTU0LjA0OTIgLTEyNi4xNzIwOCwyNzYuOTkyNDUgLTEyNi4xNzIwOCwyNzYuOTkyNDUgWiIKICAgICAgIGlkPSJwYXRoMTUyNyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE1MjctNCIKICAgICAgIGQ9Im0gMjkwLjI0NzI1LDMyMS4yMDE0NSBjIDI4LjQ4MDg0LC03OC4yNDYyNCAxODAuNzM5OTcsLTExNy43NjQgMjAuMjQ5NDgsLTk2LjQ0NDkxIC0xNjAuNDkwNDksMjEuMzE5MDggLTE3NS42MTkzMiwxMTEuOTI5MDcgLTE3NS42MTkzMiwxMTEuOTI5MDcgeiIKICAgICAgIHN0eWxlPSJmaWxsOnVybCgjbGluZWFyR3JhZGllbnQxNTM1LTEpO2ZpbGwtb3BhY2l0eToxLjA7c3Ryb2tlOm5vbmU7c3Ryb2tlLXdpZHRoOjAuMjU0MDYzcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIgLz4KICA8L2c+Cjwvc3ZnPgo=');
+}
+
+/* Below Average Changes End */
